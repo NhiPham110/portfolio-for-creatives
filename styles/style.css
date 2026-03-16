@@ -31,9 +31,10 @@
 
 /* TODO: Replace these Google Fonts with the ones you want to use on your site. */
 /* Remember, the more fonts you load, the longer it can take for your page to load. */
-
-/* Eczar Font (for headers or special text) */
-@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap");
+/* Quicksand Font (Body text) */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ultra&display=swap");
+/* Borel Font (for headers or special text) */
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&family=Ultra&display=swap");
 
 /* Rubik Font (clean and modern for body text) */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap");
@@ -105,8 +106,8 @@
 
 :root {
   /* Typography */
-  --font-family-body: "Inter", sans-serif;
-  --font-family-heading: "Eczar", serif;
+  --font-family-body: "Quicksand", sans-serif;
+  --font-family-heading: "Borel", sans-serif, bold;
   --font-family-project-title: "Eczar", serif;
   /* Core Colours */
   --color-text-primary: #222;
@@ -905,6 +906,7 @@ a.nav-link-primary:hover {
 /* Optional container for future overlay customization */
 .project-details-overlay {
   /* Placeholder: no custom styles yet */
+  background-color: #00ffff;
 }
 
 /*
@@ -1347,6 +1349,7 @@ to keep your styles reusable and consistent.
 
 .play-page {
   /* Add page-specific layout or container styles here */
+  background-color: #00ffff;
 }
 
 /*
@@ -1458,7 +1461,7 @@ to keep your styles reusable and consistent.
   }
 
   .nav-branding-logo {
-    width: 5rem;
+    width: 7rem;
     /* TODO: Adjust the width of the logo on large devices here. */
   }
 
