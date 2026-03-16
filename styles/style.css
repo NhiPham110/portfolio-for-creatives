@@ -559,7 +559,7 @@ sup {
 
 /* ✨ Highlighted text — great for emphasis */
 .highlight-primary {
-  color: var(--color-accent-secondary);
+  color: rgb(208, 58, 83);
 }
 
 .highlight-gradient {
