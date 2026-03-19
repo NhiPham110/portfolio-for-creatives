@@ -856,6 +856,11 @@ a.nav-link-primary:hover {
 }
 
 /* Individual Work Grid Item */
+
+.work-page-grid-item {
+  border: 6px dotted yellowgreen;
+  border-radius: 2rem;
+}
 .work-page-grid-item,
 .overlay-container {
   width: 100%;
