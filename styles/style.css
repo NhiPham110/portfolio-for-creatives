@@ -121,7 +121,7 @@
   --color-bg: #fdfdfd;
   --color-bg-about: #f5f5f5;
   --color-bg-footer: #f5f5f5;
-  --color-bg-holding-page: rgba(82, 0, 255, 0.6);
+  --color-bg-holding-page: #f5f5f5;
   /* Headings */
   --h1-color: #5200ff;
   --h2-color: #5200ff;
@@ -565,7 +565,7 @@ sup {
 
 .highlight-gradient {
   background: var(--color-gradient-hero);
-  -webkit-background-clip: text;
+  -webkit-backgroucnd-clip: text;
   color: transparent;
   font-weight: bold;
 }
@@ -914,7 +914,10 @@ s
   /* Placeholder: no custom styles yet */
   background-color: #262626;
 }
-
+/* My drawing icon set */
+.icon {
+  width: 2rem;
+}
 /*
 
 ███████ ██ ██████  ███████ ██████   █████  ██████  
@@ -1278,7 +1281,9 @@ s
      • CSS: styles/interactive-blobs.css
      • JS:  js/interactive-blobs.js
 ---------------------------------------------------------------- */
-
+.index-bg {
+  color: white;
+}
 .holding-page-animation {
   width: 10rem;
   margin: 0 auto;
@@ -1286,8 +1291,8 @@ s
 }
 
 .holding-page-title {
-  font-size: 1.5rem;
-  color: var(--color-text-holding-title);
+  font-size: 3rem;
+  color: rgb(32, 32, 32);
 }
 
 .holding-page-footer {
@@ -1300,9 +1305,7 @@ s
 
 .holding-page-copyright {
   font-size: 0.8rem; /* Smaller font size for copyright text */
-  color: var(
-    --color-text-holding-footer
-  ); /* Custom color for the footer text */
+  color: var(orange); /* Custom color for the footer text */
   margin-bottom: 0; /* Removes default margin from the bottom of the copyright text */
 }
 
@@ -1319,7 +1322,7 @@ s
 /* A great 404 page is a chance to leave a memorable impression when visitors land on a page that doesn't exist. Consider customizing this page to be more engaging, humorous, or on-brand with your site. Check out error.css for the gradient and glitch effect. */
 
 .error-headline-wrapper {
-  width: 85%;
+  width: 100vh;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -1332,6 +1335,8 @@ s
 
 .error-page-animation {
   width: 25rem;
+  display: flex;
+  align-items: center;
 }
 
 /*
