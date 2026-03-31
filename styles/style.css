@@ -915,7 +915,7 @@ s
   background-color: #262626;
 }
 /* My drawing icon set */
-.icon {
+.iconmine {
   width: 2rem;
 }
 /*
@@ -1331,12 +1331,14 @@ s
   padding: var(--padding-small);
   text-align: center;
   margin: 0 auto;
+  background: red;
 }
 
 .error-page-animation {
   width: 25rem;
   display: flex;
   align-items: center;
+  background: yellow;
 }
 
 /*
@@ -1671,7 +1673,7 @@ to keep your styles reusable and consistent.
   /* TODO: Add styles here for XX-large devices. */
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   }
 }
 
