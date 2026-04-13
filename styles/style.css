@@ -108,7 +108,7 @@
   /* Typography */
   --font-family-body: "Quicksand", sans-serif;
   --font-family-heading: "Borel", sans-serif, bold;
-  --font-family-project-title: "Eczar", serif;
+  --font-family-project-title: "Borel", serif;
   /* Core Colours */
   --color-text-primary: #222;
   --color-text-secondary: #333;
@@ -123,12 +123,12 @@
   --color-bg-footer: #f5f5f5;
   --color-bg-holding-page: #f5f5f5;
   /* Headings */
-  --h1-color: #5200ff;
-  --h2-color: #5200ff;
-  --h3-color: #5200ff;
-  --h4-color: #5200ff;
-  --h5-color: #5200ff;
-  --h6-color: #5200ff;
+  --h1-color: #3a3a3a;
+  --h2-color: #3a3a3a;
+  --h3-color: #3a3a3a;
+  --h4-color: #3a3a3a;
+  --h5-color: #3a3a3a;
+  --h6-color: #3a3a3a;
   /* Special Text Colours */
   --color-text-holding-title: #ebedf0;
   --color-text-project-category: #ffffff;
@@ -143,10 +143,10 @@
   /* Navigation */
   --color-nav-link: #5200ff;
   --color-nav-link-hover: #321575;
-  --color-nav-arrow: #5200ff;
+  --color-nav-arrow: #000000;
   --color-nav-arrow-hover: #000;
-  --color-nav-arrow-stroke: #5200ff;
-  --color-nav-arrow-stroke-hover: #000;
+  --color-nav-arrow-stroke: #000000;
+  --color-nav-arrow-stroke-hover: #dc6529;
   /* Components */
   --color-bg-full-width: #f5f5f5;
   --color-bg-project-description: #f5f5f5;
@@ -606,12 +606,12 @@ a:link {
 
 /* Visited link — after a user clicks and returns */
 a:visited {
-  color: var(--color-link-visited);
+  color: #3a3a3a;
 }
 
 /* Hover — when a user hovers their mouse over the link */
 a:hover {
-  color: var(--color-link-hover);
+  color: orange;
 }
 
 /* Focus — when a link is focused (keyboard navigation) */
@@ -631,10 +631,10 @@ a:active {
 /* -------------------------------------------------------------------------- */
 
 a.nav-link-primary {
-  color: var(--color-nav-link);
+  color: #3a3a3a;
 }
 a.nav-link-primary:hover {
-  color: var(--color-nav-link-hover);
+  color: orange;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -647,13 +647,13 @@ a.nav-link-primary:hover {
 
 .navigation-arrow:link,
 .navigation-arrow:visited {
-  color: var(--color-nav-arrow);
+  color: #3a3a3a;
 }
 
 /* Hover and active (clicked) states — makes arrows feel interactive */
 .navigation-arrow:active,
 .navigation-arrow:hover {
-  color: var(--color-nav-arrow-hover);
+  color: orange;
 }
 
 /* 🖋️ Optional stroke effect for a bold, outlined arrow look */
@@ -1013,7 +1013,24 @@ s
 /* 🧩 FOOTER SECTION PLACEMENT                                                */
 /* Each component stacks vertically in mobile view                             */
 /* -------------------------------------------------------------------------- */
-
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.footer-mark {
+  width: 100%;
+}
+.footer-divider {
+  border-top: 1px dashed black;
+  -top: 1rem;
+}
+.footer-nametag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .footer-tagline {
   grid-column: 1 / 2; /* Full width (single column) */
   grid-row: 1 / 2;
@@ -1036,7 +1053,11 @@ s
   text-align: center; /* Center copyright text */
   align-self: end; /* Push to bottom */
 }
-
+@media (min-width: 992px) {
+  .footer-nametag {
+    padding-bottom: 1.5rem;
+  }
+}
 /* ------------------------------- */
 /* 📜 Reusable footer list styles */
 /* ------------------------------- */
@@ -1322,7 +1343,7 @@ s
 /* A great 404 page is a chance to leave a memorable impression when visitors land on a page that doesn't exist. Consider customizing this page to be more engaging, humorous, or on-brand with your site. Check out error.css for the gradient and glitch effect. */
 
 .error-headline-wrapper {
-  width: 100vh;
+  width: 60vh;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -1331,7 +1352,6 @@ s
   padding: var(--padding-small);
   text-align: center;
   margin: 0 auto;
-  background: red;
 }
 
 .error-page-animation {
@@ -1555,7 +1575,7 @@ to keep your styles reusable and consistent.
   /* Main Project Image Area on Large Devices */
 
   .project-details {
-    width: 65%;
+    width: 100%;
   }
 
   .project-image-container,
@@ -1641,14 +1661,6 @@ to keep your styles reusable and consistent.
   }
 
   /* Work Sidebar on Large Devices */
-
-  .work-sidebar {
-    width: 25%;
-    height: 80vh;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 1rem;
-  }
 
   /* Main Work Area on Large Devices */
 
