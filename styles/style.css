@@ -213,7 +213,7 @@ html {
   box-sizing: border-box; /* Makes sure padding and borders don't add extra width to elements */
   scroll-behavior: smooth; /* Adds smooth scrolling between sections */
   cursor:
-    url("/assets/my_photos/persimmoncs.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
+    url("/assets/my_photos/1x/persimmon3-8.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
 
   /* TODO: Replace the URL above to add a custom cursor. 
      If you want to use the default browser cursor, just delete this line. */
@@ -740,7 +740,7 @@ a.nav-link-primary:hover {
   background-size: 100%;
   opacity: 0.5;
   flex: 1;
-  gap: 3rem;
+
   align-items: center;
   justify-content: center;
   text-align: center;
